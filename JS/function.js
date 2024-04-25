@@ -17,6 +17,23 @@ function avgArray(nums) {
 
 console.log(avgArray(nums));// this returns 5
 
+// Take an array of strings and return the longest string
+
+let strings =['technology', 'professional', 'reduce', 'determine', 'syntax']
+
+function longestString(strings){
+    return strings.reduce(function(longest, current) {
+        if (current.length > longest.length) {
+            return current //if current string is longer, make it the new longest
+        } else{
+            return longest// else keep the existing string
+        }
+
+    }, "")
+}
+
+console.log(longestString(strings));// this returns the longest string which is 'professional'
+
 
 
 
