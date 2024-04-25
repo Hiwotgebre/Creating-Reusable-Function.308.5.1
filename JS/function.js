@@ -7,9 +7,15 @@ function sumArray(nums) {
     return nums.reduce((total, num) => total + num, 0);
 }
 
-console.log(sumArray(nums));
+console.log(sumArray(nums));//this returns 20
 
-// Take
+// Take an array of numbers and return the average
+
+function avgArray(nums) {
+    return sumArray(nums) / nums.length;
+}
+
+console.log(avgArray(nums));// this returns 5
 
 
 
