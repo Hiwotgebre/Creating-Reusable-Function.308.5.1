@@ -45,6 +45,17 @@ function getLongerStrings(strings, minLength) {
 
 console.log(getLongerStrings(strings, minLength));//This will return an array that has grater than 6 letter in this case it will print ['technology', 'professional', 'determine']
 
+// Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+
+function countUpToN(n, current = 1) {
+    console.log (current);
+    if (current < n) {
+        countUpToN(n, current + 1);
+    }
+}
+
+countUpToN(10);
+
 
 
 
