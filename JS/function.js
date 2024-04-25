@@ -20,6 +20,7 @@ console.log(avgArray(nums));// this returns 5
 // Take an array of strings and return the longest string
 
 let strings =['technology', 'professional', 'reduce', 'determine', 'syntax']
+let minLength = 6;
 
 function longestString(strings){
     return strings.reduce(function(longest, current) {
@@ -34,7 +35,15 @@ function longestString(strings){
 
 console.log(longestString(strings));// this returns the longest string which is 'professional'
 
+// Take an array of strings, and a number and return an array of the strings that are longer than the given number.
 
+function getLongerStrings(strings, minLength) {
+    return strings.filter(function(strings){
+        return strings.length > minLength
+    })
+}
+
+console.log(getLongerStrings(strings, minLength));//This will return an array that has grater than 6 letter in this case it will print ['technology', 'professional', 'determine']
 
 
 
