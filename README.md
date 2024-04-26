@@ -2,6 +2,8 @@
 # This project demonstrates the implementation of fundamental programming principles, particularly "Don't Repeat Yourself(DRY)," through the creation of a reusable JavaScript function
 
 #Project Structure
+
+
 Part 1: Thinking Functionally - Focuses on creating standalone functions for basic data manipulation tasks
 Part 2: Thinking Methodically - Utilizes built-in JavaScript array methods to perform more complex data handling
 Part 3: Thinking Critically - Demonstrates object manipulation and considerations when working with references and values in JavaScript
