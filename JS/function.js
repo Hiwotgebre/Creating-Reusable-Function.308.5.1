@@ -91,6 +91,15 @@ function changeAndIncrementAge(person) {
 }
 console.log(changeAndIncrementAge(person));//the out put display change occupation into job and display age as a string
 
+// Calculate the sum and average of ages
+function averageAge(person) {
+    const totalAge = person.reduce(function(total, person) {
+        return total + Number(person.age);
+    }, 0);
+    return totalAge / person.length
+}
+
+console.log(averageAge(person)) //This out put display average of a list of people
 
 
 
