@@ -54,7 +54,43 @@ function countUpToN(n, current = 1) {
     }
 }
 
-countUpToN(10);
+countUpToN(10);// this print whole numbers start from 1 to 10
+
+// Paret 2: Thinking Methodically
+const person = [
+    {id: '42', name: 'Bruce', occupation: 'Knight', age: '41'},
+    {id: '48', name: 'Barry', occupation: 'Runner', age: '25'},
+    {id: '57', name: 'Bob', occupation: 'Fry Cook', age: '19'},
+    {id: '63', name: 'Blaine', occupation: 'Quiz Master', age: '58'},
+    {id: '7', name: 'Bilbo', occupation: 'None', age: '111'},
+];
+
+// Sort the array by Age
+function sortByAge(person) {
+    return person.sort((a, b) => Number(a.age) - Number(b.age));
+}
+
+console.log(sortByAge(person));//This display sorting age from list to greatest
+
+// Filter the array to remove entries an age greater than 50
+function filterByAge(person){
+    return person.filter(person => Number(person.age) <= 50);
+}
+
+console.log(filterByAge(person)); //The out put shows filtering the ages and display who is less than 50 years old
+
+// Map the array to change the "Occupation" key to "job" and increment every age by 1
+function changeAndIncrementAge(person) {
+    return person.map(function(person){
+        return{
+            ...person, //Spread operator to copy properties from the original person object
+            job: person.occupation, //change occupation to job
+            age: String(Number(person.age) + 1) // Increament age and change into string
+        };
+    });
+}
+console.log(changeAndIncrementAge(person));//the out put display change occupation into job and display age as a string
+
 
 
 
